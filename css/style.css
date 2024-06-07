@@ -1,0 +1,369 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  color: #fff;
+  background: #000;
+}
+
+/* Navbar Styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  background-color: #000;
+  padding: 0 20px;
+}
+
+.logo h1 {
+  font-size: 24px;
+  color: #fff;
+}
+
+.logo span {
+  color: #FF6347;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.koks {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.int1, .int2, .int3 {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 3px;
+}
+
+@media screen and (max-width: 770px) {
+  .nav-links {
+      display: none;
+      flex-direction: column;
+  }
+
+  .nav-links.active {
+      display: flex;
+  }
+
+  .koks {
+      display: flex;
+  }
+}
+
+/* Header Styles */
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0% 100%), url(../images/interstellar_3321_2880x1800.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@media screen and (max-width: 790px) {
+  header {
+      height: 60vh;
+  }
+}
+
+.koks1 h1 {
+  font-size: 50px;
+}
+
+.koks1 p {
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+.button a {
+  text-decoration: none;
+}
+
+.btn-1, .btn-2, .btn-3 {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-1:hover {
+  background-color: #708090;
+  color: black;
+}
+
+.btn-2:hover {
+  background-color: #708090;
+  color: white;
+}
+
+/* Main Actor Section */
+#Main\ Actor {
+  padding: 50px 0;
+  background: #111;
+  text-align: center;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img img {
+  width: 100%;
+  max-width: 500px;
+}
+
+.caption h4 {
+  font-size: 24px;
+}
+
+.caption h1 {
+  font-size: 36px;
+}
+
+.caption p {
+  font-size: 16px;
+  margin: 20px 0;
+  max-width: 600px;
+}
+
+/* About Section */
+#About {
+  padding: 50px 0;
+  background: #222;
+  text-align: center;
+}
+
+#About h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+}
+
+.icon {
+  margin: 0 20px;
+}
+
+.icon i {
+  font-size: 50px;
+  color: #FF6347;
+}
+
+.icon p {
+  margin-top: 10px;
+}
+
+/* Shots Section */
+#Shots {
+  padding: 50px 0;
+  background: #333;
+  text-align: center;
+}
+
+#Shots h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  margin: 0 20px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  max-width: 300px;
+}
+
+.card h1 {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.card p {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+/* Contact Section */
+#contact {
+  padding: 50px 0;
+  background: #444;
+}
+
+.koks2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.label {
+  margin: 20px;
+}
+
+.label h5 {
+  font-size: 24px;
+}
+
+.input, .input1 {
+  display: block;
+  width: 300px;
+  padding: 10px;
+  margin: 10px auto;
+  border: none;
+  border-radius: 5px;
+}
+
+.input1 {
+  height: 100px;
+}
+
+.button .btn-3 {
+  margin-top: 20px;
+  padding: 10px 20px;
+}
+
+.captions h5 {
+  font-size: 24px;
+}
+
+.captions p {
+  font-size: 16px;
+  margin: 20px 0;
+  max-width: 600px;
+}
+
+.koks11 {
+  list-style: none;
+}
+
+.koks12 {
+  margin: 10px 0;
+}
+
+.koks12 span {
+  margin-right: 10px;
+}
+
+/* Team Section */
+#Team {
+  padding: 50px 0;
+  background: #555;
+  text-align: center;
+}
+
+#Team h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.team .caption, .team .image {
+  margin: 20px;
+}
+
+.team .caption span {
+  font-size: 24px;
+  color: #FF6347;
+}
+
+.team .caption h3 {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.team .caption p {
+  font-size: 16px;
+  margin-top: 10px;
+  max-width: 300px;
+}
+
+.team .caption a {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #FF6347;
+}
+
+.team .image img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 50%;
+}
+
+/* Footer Styles */
+.footer {
+  background: #000;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer .footer-icon ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.footer .footer-icon ul li {
+  margin: 0 10px;
+}
+
+.footer .footer-icon ul li a {
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.footer .copy-right {
+  margin-top: 20px;
+  color: #fff;
+}
+
+.footer .copy-right a {
+  color: #FF6347;
+  text-decoration: none;
+}
